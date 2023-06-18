@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
+  font-weight: medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url
+    ("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+  font-weight: regular;
+  font-display: swap;
+}
+
+/*General*/
+
+:root {
+  --primary-color: #161616;
+  --secondary-main-color: #03752E2;
+  --secondary-color: #9c9c9c;
+  --background-color: #f9f9f9;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  background-color: var(--background-color);
+}
+
+header {
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  text-align: left;
+}
+
+.mainBtn {
+  background-color: var(--primary-color);
+  color: #f9f9f9;
+  cursor: pointer;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-align: right;
+}
+
+.feature-title {
+  color: #9c9c9c;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 15px;
+}
+
+p {
+  text-align: center;
+  margin: 15px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: var(--primary-color);
+  font-family: "DM Sans";
+  color: #f9f9f9;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 10px 10px;
+  border-radius: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px 15px;
+}
+
+.mockupImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mockupImage .mockup {
+  width: 100vw;
+  height: 553px;
+  margin-top: 10px;
+  object-fit: cover;
+  object-position: right;
+}
+
+.logoWrapper {
+  background-color: var(--primary-color);
+  width: auto;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container-top img {
+  filter: invert(5);
+  width: 80px;
+  height: 20px;
+  margin: 0px 15px;
+  padding: 0px 0px;
+  padding-top: 20px;
+  gap: 35px;
+}
+
+.logo-container-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container-bottom img {
+  margin: 0 15px;
+  filter: invert(5);
+  width: 100px;
+  height: 20px;
+  padding-top: 25px;
+}
+
+.arrow {
+  margin-left: 5px;
+}
+
+.sub-title {
+  padding-top: 50px;
+  font-weight: 500px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.socialImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 380px;
+  padding: 40px;
+}
+
+.imgSuscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 30px;
+  padding-top: 80px;
+  margin: auto;
+}
+
+.space {
+  margin-top: 40px;
+}
+
+.p {
+  font-size: 16px;
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+.line {
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.footer-container {
+  padding-top: 30px;
+  background-color: var(--background-color);
+}
+
+.footerLogo {
+  text-align: center;
+}
+
+.footer-container li {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 15%;
+}
+
+.footer-menu a {
+  color: var(--primary-color);
+  text-align: center;
+  padding: 0px;
+}
+
+.footer-container p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 744px) and (max-width: 1212px) {
+  body {
+    font-size: 20px;
+  }
+
+  .feature-title {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 20px;
+    font-weight: 400px;
+    text-align: center;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+
+  .mockupImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mockupImage .mockup {
+    width: 100vw;
+    height: 600px;
+    margin-top: 10px;
+  }
+
+  .logoWrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+
+  .logo-container-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sub-title {
+    font-size: 36px;
+    font-weight: 500px;
+  }
+
+  .p-info {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400px;
+    margin-left: 115px;
+    margin-right: 160px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .social-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socialImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgSuscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-menu {
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 30%;
+  }
+
+  .footer-container p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 1212px) {
+  .logo {
+    width: 100px;
+  }
+
+  .mainBtn {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px 10px;
+  }
+
+  .feature-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px;
+  }
+
+  h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 10px;
+  }
+
+  h1 br {
+    display: initial;
+  }
+
+  .description p {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 15px;
+  }
+
+  .btn {
+    display: flex;
+    text-align: left;
+  }
+  .mockupImage {
+    align-items: initial;
+  }
+}
+.mockupImage {
+  grid-area: 1 /1 /3/2;
+  align-self: end;
+}
+
+.hero-section {
+  grid-area: 1/1/2/2;
+}
+
+.mainSocial {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.social-container {
+  text-align: right;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.p-info {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0;
+}
+
+.imgSuscription {
+  display: grid;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.btn {
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 10px 10px;
+}
+
+.footer-container p {
+  display: flex;
+  text-decoration: row;
+  justify-content: end;
+  text-align: end;
+}
+
+.button-Container .btn {
+  display: flex;
+}
+
+.hero-section {
+  padding-top: 70px;
+  z-index: 10;
+}
+
+.logoWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.logoWrapper div {
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.social {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-container a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-menu,
+.footerLogo,
+p {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
